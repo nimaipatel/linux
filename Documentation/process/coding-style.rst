@@ -943,7 +943,7 @@ the kmalloc() inline function.
 Often people argue that adding inline to functions that are static and used
 only once is always a win since there is no space tradeoff. While this is
 technically correct, gcc is capable of inlining these automatically without
-help, and the maintenance issue of removing the inline when a second user
+help, and the maintenance issue of removing the inline when a second use
 appears outweighs the potential value of the hint that tells gcc to do
 something it would have done anyway.
 
